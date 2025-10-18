@@ -1,0 +1,47 @@
+/* Minimal responsive mobile-first styles for CYSIP */
+:root{
+  --bg:#ffffff;
+  --text:#111;
+  --accent:#2a8f6e;
+  --wrap-max:1000px;
+  --pad:1rem;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  color:var(--text);
+  background:var(--bg);
+  line-height:1.5;
+}
+.wrap{
+  max-width:var(--wrap-max);
+  margin:0 auto;
+  padding:var(--pad);
+}
+.site-header{
+  border-bottom:1px solid #eee;
+  background:#fff;
+}
+.site-header .wrap{display:flex;align-items:center;justify-content:space-between;}
+.brand{margin:0;font-weight:700;letter-spacing:0.06em;}
+nav a{margin-left:1rem;color:inherit;text-decoration:none;font-size:0.95rem}
+.hero{
+  padding:2.25rem 0;
+  background:linear-gradient(180deg, rgba(42,143,110,0.06), transparent);
+}
+.hero h2{margin:0 0 .5rem;font-size:1.5rem}
+.cta{
+  display:inline-block;
+  margin-top:0.75rem;
+  background:var(--accent);
+  color:#fff;
+  padding:.6rem 1rem;
+  text-decoration:none;
+  border-radius:6px;
+}
+@media(min-width:700px){
+  .hero h2{font-size:2rem}
+  nav a{margin-left:1.25rem}
+}
+.site-footer{border-top:1px solid #eee;padding:.75rem 0;text-align:center;color:#666}
